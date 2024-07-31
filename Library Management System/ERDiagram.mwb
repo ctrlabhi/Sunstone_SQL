@@ -1,0 +1,54 @@
+
+
+
+
++---------------+          +-------------+          +-----------+
+|  Student      |          |    Teacher  |          |   Book    |
+|---------------|          |-------------|          |-----------|
+|   student_id  |          |  teacher_id |          |  book_id  |
+|      name     |          |    name     |          |   title   |
+|    address    |          |   address   |          |  author  |
+|  contact_info |          | contact_info|          |  category |
+|enrollment_date|          |  hire_date  |          |   copies  |
++---------------+          +-------------+          +-----------+
+        |                    |                            |
+        |                    |                            |
+        |                    |                            |
+        |                    |                            |
+        |                    |                            |
+        |                    |                            |
+        +----------+---------+                            |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+           +-------+--------+                             |
+           |   Issue        |                             |
+           |----------------|                             |
+           | issue_id       |                             |
+           | book_copy_id   |                             |
+           | issuer_id      |                             |
+           | issuer_type    |                             |
+           | issue_date     |                             |
+           | return_date    |                             |
+           | due_date       |                             |
+           | fine_amount    |                             |
+           +-------+-------+                              |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+                   |                                      |
+           +-------+-------+                              |
+           |   BookCopy    |                              |
+           |---------------|                              |
+           | book_copy_id  |                              |
+           | book_id       |                              |
+           | copy_number   |                              |
+           | status        |                              |
+           +---------------+                              |
