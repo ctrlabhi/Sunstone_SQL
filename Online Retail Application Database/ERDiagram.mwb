@@ -1,0 +1,31 @@
++------------+          +--------+          +--------+
+|  Customer  |          | Product|          | Order  |
+|------------|          |--------|          |--------|
+| customer_id| 1      N |product_id|      N | order_id|
+|    name    |<-------->|product_name|<---->|customer_id|
+|   address  |          |  price  |          |order_date|
+|contact_info|          | quantity|          +--------+
+|bank_details|          +--------+
+|  password  |
++------------+
+     |                  +-------------+
+     |                  | OrderItem   |
+     |                  |-------------|
+     |                  |order_item_id|
+     |                  |order_id     |
+     |                  |product_id   |
+     |                  |quantity     |
+     |                  |price        |
+     |                  |discount     |
+     |                  +-------------+
+     |                        |
+     |                        |
+     +-----------+ N      1 +-+
+                 | Payment    |
+                 |------------|
+                 | payment_id |
+                 | order_id   |
+                 |payment_method|
+                 |payment_date|
+                 | amount     |
+                 +------------+
